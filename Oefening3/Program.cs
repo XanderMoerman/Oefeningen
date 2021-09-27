@@ -10,11 +10,13 @@ namespace Oefening3
     {
         static void Main(string[] args)
         {
-            uint getal;
+            ulong getal;
             Console.WriteLine("Geef het getal in.");
-            getal = uint.Parse(Console.ReadLine());
-            Console.WriteLine("Minuten is: {0:D}", getal / 60);
-            Console.WriteLine("Uren is: {0:D}", getal / 3600);
+            getal = ulong.Parse(Console.ReadLine());
+            Console.WriteLine("Uren is: {0}", getal / 3600);
+            Console.WriteLine("Minuten is: {0}", (getal % 3600) / 60);
+            Console.WriteLine("Seconden is: {0}", (getal % 3600) % 60);
+
         }
     }
 }
