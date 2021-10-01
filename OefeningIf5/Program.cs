@@ -10,10 +10,10 @@ namespace OefeningIf5
     {
         static void Main(string[] args)
         {
-            int get1, get2;
+            short get1, get2;
             Console.WriteLine("Geet 2 getallen in.");
-            get1 = int.Parse(Console.ReadLine());
-            get2 = int.Parse(Console.ReadLine());
+            get1 = short.Parse(Console.ReadLine());
+            get2 = short.Parse(Console.ReadLine());
             Console.WriteLine((get1 > get2) ? "Getal 1 is groter." : "Getal 2 is groter.");
             
         }
