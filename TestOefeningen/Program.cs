@@ -10,8 +10,7 @@ namespace TestOefeningen
     {
         static void Main(string[] args)
         {
-            int getal = int.Parse(Console.ReadLine());
-            Console.WriteLine((getal == 1) ? "1" : "anders");
+
         }
     }
 }
