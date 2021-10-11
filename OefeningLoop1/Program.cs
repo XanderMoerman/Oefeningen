@@ -10,10 +10,12 @@ namespace OefeningLoop1
     {
         static void Main(string[] args)
         {
-            for (byte tellerwaarde = 0, totwaarde = 0; tellerwaarde < 5; tellerwaarde++)
+            byte aantalGetallen = byte.Parse(Console.ReadLine());
+            short som;
+            for (short tellerWaarde = 0,getal = 0; tellerWaarde < aantalGetallen; tellerWaarde++)
             {
-                totwaarde += tellerwaarde;
-                Console.WriteLine("De tellerwaarde is {0} en totaal is {1}", tellerwaarde, totwaarde);
+                getal = int.Parse(Console.ReadLine());
+                som += getal;
             }
         }
     }
