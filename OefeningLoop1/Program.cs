@@ -10,13 +10,17 @@ namespace OefeningLoop1
     {
         static void Main(string[] args)
         {
-            byte aantalGetallen = byte.Parse(Console.ReadLine());
-            short som;
-            for (short tellerWaarde = 0,getal = 0; tellerWaarde < aantalGetallen; tellerWaarde++)
+            Console.WriteLine("Geef het aantal getallen in.");
+            byte aantal = byte.Parse(Console.ReadLine());
+            short som = 0;
+            Console.WriteLine("Geef {0} getallen in.", aantal);
+            for(byte getal = 0, teller = 1; teller <= aantal; teller++)
             {
-                getal = int.Parse(Console.ReadLine());
+                getal = byte.Parse(Console.ReadLine());
                 som += getal;
+                
             }
+            Console.WriteLine("Som is: {0}", som);
         }
     }
 }
