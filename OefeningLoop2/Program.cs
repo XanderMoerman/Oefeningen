@@ -14,12 +14,12 @@ namespace OefeningLoop2
             byte aantal = byte.Parse(Console.ReadLine());
             float getal2 = 0; //op een na grootste getal
             float getal3 = 0; // grootste getal
+            Console.WriteLine("Geef {0} getallen op.", aantal);
             for(byte teller = 1; teller<=aantal; teller++)
             {
                 float getal = float.Parse(Console.ReadLine()); // ingelezen getal
-                if (getal > getal2) getal2 = getal;
-                else if (getal > getal3) getal3 = getal;
-                if (getal2 > getal3) getal3 = getal2;
+                if (getal > getal3) getal3 = getal;
+                else if (getal > getal2) getal2 = getal;
                 
                 
             }
