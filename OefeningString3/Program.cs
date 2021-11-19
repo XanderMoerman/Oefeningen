@@ -21,7 +21,7 @@ namespace OefeningString3
                 if (char.IsLetter(str[i])) ++i;
                 else str.Remove(i, 1);
             }
-            Console.WriteLine("Zin is {0}:", str);
+            Console.WriteLine("Zin is {0}", str);
         }
     }
 }
