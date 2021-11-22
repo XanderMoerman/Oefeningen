@@ -19,11 +19,12 @@ namespace OefeningString4
             {
                  RekNr = RekNr.Remove(RekNr.IndexOf(" "), 1);
             }
-            Console.WriteLine(RekNr);
+            Console.WriteLine("Nr is {0}", RekNr);
             string Rest = RekNr.Substring(10, 2);
-            String getal = RekNr.Remove(10, 2);
-            Console.WriteLine(Rest);
+            RekNr = RekNr.Remove(10, 2);
+            Console.WriteLine("rest is {0} en getal is {1}", Rest, RekNr);
 
+            
             
         }
     }
