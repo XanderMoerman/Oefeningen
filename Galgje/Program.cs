@@ -11,21 +11,38 @@ namespace Galgje
         static void Main(string[] args)
         {
             string text = "a b c d e f g h i j k l m n o p q r s t u v w x y z";
+            string geraden = "";
             int fout = 0, juist = 0;
-            Console.WriteLine("Geef een woord in.");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Give a word.");
+            Console.ForegroundColor = ConsoleColor.Magenta;
             string woord = Console.ReadLine();
             Console.Clear();
-            for(int teller = 0; teller != 10; ++teller)
+            for(int teller = 0; teller != 5; ++teller)
             {
                 woord = woord.ToLower();
-                Console.WriteLine(text);
-                Console.WriteLine("Nog {0} fout(en) te gaan.", 10 - fout);
-                Console.WriteLine("Aantal juiste letters : {0}\nAantal foute letters : {1} \n", juist, fout);
-                
-                Console.WriteLine("Geef een letter in.");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Letters you can choose from: {0}", text);
+                Console.WriteLine("Letters you already picked: {0}", geraden);
+                Console.ForegroundColor = ConsoleColor.Red;
+
+                Console.WriteLine();
+                Console.WriteLine("Lifes left out of 5: {0}", 5 - fout);
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+
+                Console.WriteLine();
+                Console.WriteLine("Amount of right anwsers: {0}", juist);
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Aantal fouten tot nu toe: {0}", fout);
+
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Give a letter.");
+
+                Console.ForegroundColor = ConsoleColor.Magenta;
                 string letter = Console.ReadLine();
                 if (woord.Contains(letter) && text.Contains(letter))
                 {
+
                     ++juist;
                     --teller;
                 }
@@ -35,11 +52,32 @@ namespace Galgje
                 {
                     text = text.Remove(text.IndexOf(" ", text.IndexOf(letter)), 1);
                     text = text.Replace(letter, "");
+
+                    geraden = geraden + letter + " ";
                     
                 }
+                if (juist == woord.Length) break;
                 Console.Clear();
             }
-            Console.WriteLine("DOOD");
+            Console.Clear();
+            if (juist == woord.Length)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("WINNER WINNER CHICKEN DINER!");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+            }
+            else if (juist != woord.Length)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Loser! Better luck next time.");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("An error occurred. Please try again.");
+            }
+            
         }
     }
 }
