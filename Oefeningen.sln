@@ -57,6 +57,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningString4", "Oefening
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galgje", "Galgje\Galgje.csproj", "{FE5DB129-08C9-49E7-A99B-EA3477BD4337}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningArray1", "OefeningArray1\OefeningArray1.csproj", "{CE1EC179-7AAD-4F65-901D-450A8B50E865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningArray2", "OefeningArray2\OefeningArray2.csproj", "{EEB4BBC5-DB1C-4077-A734-04AD0DEE5CF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +159,14 @@ Global
 		{FE5DB129-08C9-49E7-A99B-EA3477BD4337}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE5DB129-08C9-49E7-A99B-EA3477BD4337}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5DB129-08C9-49E7-A99B-EA3477BD4337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1EC179-7AAD-4F65-901D-450A8B50E865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1EC179-7AAD-4F65-901D-450A8B50E865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1EC179-7AAD-4F65-901D-450A8B50E865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1EC179-7AAD-4F65-901D-450A8B50E865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB4BBC5-DB1C-4077-A734-04AD0DEE5CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB4BBC5-DB1C-4077-A734-04AD0DEE5CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB4BBC5-DB1C-4077-A734-04AD0DEE5CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB4BBC5-DB1C-4077-A734-04AD0DEE5CF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
