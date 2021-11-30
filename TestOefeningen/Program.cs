@@ -10,6 +10,9 @@ namespace TestOefeningen
     {
         static void Main(string[] args)
         {
+            var random = new Random();
+            int getal = random.Next(0, 10);
+
             
         }
     }
