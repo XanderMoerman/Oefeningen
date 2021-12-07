@@ -10,10 +10,31 @@ namespace TestOefeningen
     {
         static void Main(string[] args)
         {
-            var random = new Random();
-            int getal = random.Next(0, 10);
-
-            
+            for(int i = 0; i != 100; ++i)
+            {
+                switch (i)
+                {
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        break;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        break;
+                    case 3:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        break;
+                    case 4:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        break;
+                    case 5:
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        i = 1;
+                        break;
+                }
+                Console.WriteLine("Hoi");
+                System.Threading.Thread.Sleep(200);
+                Console.Clear();
+            }
         }
     }
 }
