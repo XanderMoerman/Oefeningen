@@ -64,12 +64,14 @@ namespace Galgje
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("WINNER WINNER CHICKEN DINER!");
+                Console.WriteLine(woord);
                 Console.ForegroundColor = ConsoleColor.Yellow;
             }
             else if (juist != woord.Length)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Loser! Better luck next time.");
+                Console.WriteLine(woord);
                 Console.ForegroundColor = ConsoleColor.Yellow;
             }
             else
