@@ -18,8 +18,9 @@ namespace OefeningArray3
             {
                 array1[i] = int.Parse(Console.ReadLine());
                 if (array1[i] == stopWaarde) break;
-                for(int k = 0; k != Array.IndexOf(array1, array1[i]); k++)
+                for(int k = 0; k < i; k++)
                 {
+                    Console.WriteLine("Array[i] = {0}\nArray[k] = {1}", array1[i], array1[k]);
                     if (array1[i] == array1[k]) continue;
                     else
                     {
@@ -27,6 +28,7 @@ namespace OefeningArray3
                         break;
                     }
                 }
+                continue;
                 Console.WriteLine("aantal = {0}", aantal);
             }
             Console.WriteLine("Er zijn {0} aantal verschillende getallen.", aantal);
