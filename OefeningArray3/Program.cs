@@ -12,28 +12,25 @@ namespace OefeningArray3
         {
             Console.WriteLine("Geef 20 waarden in en een -1 om te stoppen.");
             int stopWaarde = -1;
-            int aantal = 1;
+            int aantal = 0;
+            int t1; // teller
             int[] array1 = new int[20];
-            for (int i = 0; i < array1.Length; ++i)
+            for (t1 = 0; t1 < array1.Length; ++t1)
             {
-                array1[i] = int.Parse(Console.ReadLine());
-                if (array1[i] == stopWaarde) break;
-                for(int k = 0; k < i; k++)
+                array1[t1] = int.Parse(Console.ReadLine());
+                if (array1[t1] == stopWaarde) break;
+            }
+
+            for(int t2 = 0; t2 < t1; ++t2) // loop tot teller 1, tot laatst ingegeven waarde
+            {
+                for(int t3 = 0; t3 <= t2; t3++)
                 {
-                    Console.WriteLine("Array[i] = {0}\nArray[k] = {1}", array1[i], array1[k]);
-                    if (array1[i] == array1[k]) continue;
-                    else
-                    {
-                        aantal++;
-                        break;
-                    }
+                    if (t3 == t2) aantal++; // teller 3 is gelijk aan teller 2 dus getal is nieuw
+                    if (array1[t3] == array1[t2]) break; // getal zit al in de array
+                    else continue; // getal zit nog niet in array
                 }
-                continue;
-                Console.WriteLine("aantal = {0}", aantal);
             }
             Console.WriteLine("Er zijn {0} aantal verschillende getallen.", aantal);
-                    
-
         }
     }
 }
