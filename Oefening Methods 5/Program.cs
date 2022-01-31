@@ -10,29 +10,26 @@ namespace Oefening_Methods_5
     {
         static void Main(string[] args)
         {
-            bool keuze = Keuze();
-            if (keuze == true)
-            {
-                float gem = Gemiddelde();
-                Console.WriteLine("Gemiddelde is: {0}", gem);
-            }
-            else Console.WriteLine("Gemiddelde is 0");
+            int gem = 0;
+            Keuze(ref gem);
+            Console.WriteLine("Gem = {0}", gem);
         }
 
-        static bool Keuze()
+        static void Keuze(ref int gem)
         {
-            Console.WriteLine("Wil je het gemiddelde bereken van 2 getallen? [y/n]");
-            char antwoord = char.Parse(Console.ReadLine());
-            if (antwoord == 'y' || antwoord == 'Y') return true;
-            else return false;
+            Console.WriteLine("Keuze = y\nStop = n");
+            char keuze = char.Parse(Console.ReadLine());
+            if (keuze == 'y' || keuze == 'Y') Gemiddelde(ref gem);
+            if (keuze == 'n' || keuze == 'N') return;
         }
 
-        static float Gemiddelde()
+        static void Gemiddelde(ref int gem)
         {
-            Console.WriteLine("Geef 2 getallen op.");
-            int get1 = int.Parse(Console.ReadLine());
-            int get2 = int.Parse(Console.ReadLine());
-            return (get1 + get2) / 2;
+            Console.WriteLine("Geef de 2 getallen op.");
+            short get1 = short.Parse(Console.ReadLine());
+            short get2 = short.Parse(Console.ReadLine());
+            gem = (get1 + get2) / 2;
+
         }
     }
 }
