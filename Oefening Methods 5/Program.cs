@@ -11,16 +11,21 @@ namespace Oefening_Methods_5
         static void Main(string[] args)
         {
             int gem = 0;
-            Keuze(ref gem);
-            Console.WriteLine("Gem = {0}", gem);
+            char keuze = Keuze();
+            if (keuze == 'y' || keuze == 'Y')
+            {
+                Gemiddelde(ref gem);
+                Console.WriteLine("gem = {0}", gem);
+            }
+            if (keuze == 'n' || keuze == 'N') Console.WriteLine("Programma Stoppen.");
+           
         }
 
-        static void Keuze(ref int gem)
+        static char Keuze()
         {
             Console.WriteLine("Keuze = y\nStop = n");
             char keuze = char.Parse(Console.ReadLine());
-            if (keuze == 'y' || keuze == 'Y') Gemiddelde(ref gem);
-            if (keuze == 'n' || keuze == 'N') return;
+            return keuze;
         }
 
         static void Gemiddelde(ref int gem)
@@ -29,7 +34,7 @@ namespace Oefening_Methods_5
             short get1 = short.Parse(Console.ReadLine());
             short get2 = short.Parse(Console.ReadLine());
             gem = (get1 + get2) / 2;
-
+            return;
         }
     }
 }
