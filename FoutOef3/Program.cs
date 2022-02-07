@@ -10,6 +10,23 @@ namespace FoutOef3
     {
         static void Main(string[] args)
         {
+            int[] reeks = new int[3];
+            Console.WriteLine("Geef de getallen in voor de array.");
+            string Error = Opvullen(reeks);
+            
+        }
+
+        static string Opvullen(reeks)
+        {
+            try
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    reeks[i] = int.Parse(Console.ReadLine());
+                }
+            }
+            catch (System.IndexOutOfRangeException) { return "OutOfRange"; }
+            catch (System.Exception e) { return e.Message; }
         }
     }
 }
