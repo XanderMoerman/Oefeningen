@@ -10,31 +10,11 @@ namespace TestOefeningen
     {
         static void Main(string[] args)
         {
-            for(int i = 0; i != 100; ++i)
-            {
-                switch (i)
-                {
-                    case 1:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        break;
-                    case 2:
-                        Console.ForegroundColor = ConsoleColor.Blue;
-                        break;
-                    case 3:
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        break;
-                    case 4:
-                        Console.ForegroundColor = ConsoleColor.Yellow;
-                        break;
-                    case 5:
-                        Console.ForegroundColor = ConsoleColor.Magenta;
-                        i = 1;
-                        break;
-                }
-                Console.WriteLine("Hoi");
-                System.Threading.Thread.Sleep(200);
-                Console.Clear();
-            }
+            string lines = "****";
+            Console.WriteLine(lines);
+            lines = lines.Insert(2, "a");
+            lines = lines.Remove(1, 1);
+            Console.WriteLine(lines);
         }
     }
 }
