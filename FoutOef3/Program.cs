@@ -13,10 +13,11 @@ namespace FoutOef3
             int[] reeks = new int[3];
             Console.WriteLine("Geef de getallen in voor de array.");
             string Error = Opvullen(reeks);
+            Console.WriteLine(Error);
             
         }
 
-        static string Opvullen(reeks)
+        static string Opvullen(int[] reeks)
         {
             try
             {
@@ -25,8 +26,10 @@ namespace FoutOef3
                     reeks[i] = int.Parse(Console.ReadLine());
                 }
             }
-            catch (System.IndexOutOfRangeException) { return "OutOfRange"; }
+            catch (System.IndexOutOfRangeException) { return "Teveel waarden voor de array."; }
             catch (System.Exception e) { return e.Message; }
+            return "no error";
+            
         }
     }
 }
