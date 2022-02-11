@@ -9,12 +9,11 @@ namespace OefeningDateTime
     class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Druk op [ENTER] om de starten.");
+        {   
             DateTime eerste, tweede;
+            Console.WriteLine("Druk op [ENTER] om de starten.");
             Console.ReadLine();
             eerste = DateTime.Now;
-            Console.Clear();
             Console.WriteLine("Druk op [ENTER] om de stoppen.");
             Console.ReadLine();
             tweede = DateTime.Now;
