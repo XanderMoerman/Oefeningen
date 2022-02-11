@@ -10,32 +10,13 @@ namespace Test2
     {
         static void Main(string[] args)
         {
-            ConsoleSpiner spin = new ConsoleSpiner();
-            Console.Write("Working... ");
+            DateTime time = DateTime.Now;
             while (true)
             {
-                spin.Turn();
-            }
-        }
-
-        public class ConsoleSpiner
-        {
-            int counter;
-            public ConsoleSpiner()
-            {
-                counter = 0;
-            }
-            public void Turn()
-            {
-                counter++;
-                switch (counter % 4)
-                {
-                    case 0: Console.Write("/"); break;
-                    case 1: Console.Write("-"); break;
-                    case 2: Console.Write("\\"); break;
-                    case 3: Console.Write("|"); break;
-                }
-                Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
+                Console.WriteLine("Current Time: {0}", time);
+                System.Threading.Thread.Sleep(1000);
+                Console.Clear();
+                time  = time.AddSeconds(1);
             }
         }
     }
