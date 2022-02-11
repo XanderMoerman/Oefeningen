@@ -28,7 +28,7 @@ namespace FoutOef3
             }
             catch (System.IndexOutOfRangeException) { return "Teveel waarden voor de array."; }
             catch (System.Exception e) { return e.Message; }
-            return "no error";
+            return "geen error";
             
         }
     }
