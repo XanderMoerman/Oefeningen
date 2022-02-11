@@ -11,9 +11,12 @@ namespace TestOefeningen
         static void Main(string[] args)
         {
             string lines = "****";
+            string word = Console.ReadLine();
+            string letter = Console.ReadLine();
             Console.WriteLine(lines);
-            lines = lines.Insert(2, "a");
-            lines = lines.Remove(1, 1);
+            int index = word.IndexOf(letter);
+            lines = lines.Insert(index, letter);
+            lines = lines.Remove(index + 1, 1);
             Console.WriteLine(lines);
         }
     }

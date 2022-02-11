@@ -33,9 +33,10 @@ namespace Galgje_2._0
                     Console.WriteLine("Letter zit in het woord.");
                     while (word.Contains(letter))
                     {
-                        lines = lines.Insert(word.IndexOf(letter), letter);
-                        lines = lines.Remove(word.IndexOf(letter) - 1,1);
-                        word = word.Remove(word.IndexOf(letter), 1); //de letter word uit het woord verwijdert
+                        int index = word.IndexOf(letter);
+                        lines = lines.Insert(index, letter);
+                        lines = lines.Remove(index+1,1);
+                        word = word.Remove(index, 1); //de letter word uit het woord verwijdert
                         i--; //teller gaat omlaag met 1
                         System.Threading.Thread.Sleep(500); // wacht 500ms
                     }
