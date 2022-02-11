@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoutOef2", "FoutOef2\FoutOe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoutOef3", "FoutOef3\FoutOef3.csproj", "{F9B09B92-19F9-4870-AFA8-D74664121A18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningDateTime", "OefeningDateTime\OefeningDateTime.csproj", "{64F4E022-EEB7-482C-949C-68AF1B7603C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +247,10 @@ Global
 		{F9B09B92-19F9-4870-AFA8-D74664121A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B09B92-19F9-4870-AFA8-D74664121A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B09B92-19F9-4870-AFA8-D74664121A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F4E022-EEB7-482C-949C-68AF1B7603C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F4E022-EEB7-482C-949C-68AF1B7603C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F4E022-EEB7-482C-949C-68AF1B7603C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F4E022-EEB7-482C-949C-68AF1B7603C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
