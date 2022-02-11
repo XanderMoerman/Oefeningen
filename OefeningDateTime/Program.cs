@@ -11,15 +11,15 @@ namespace OefeningDateTime
         static void Main(string[] args)
         {
             Console.WriteLine("Druk op [ENTER] om de starten.");
-            DateTime eerste;
+            DateTime eerste, tweede;
             Console.ReadLine();
             eerste = DateTime.Now;
-            Console.WriteLine("Druk op [ENTER] om te stoppen.");
-            DateTime tweede;
+            Console.Clear();
+            Console.WriteLine("Druk op [ENTER] om de stoppen.");
             Console.ReadLine();
             tweede = DateTime.Now;
             TimeSpan tijd = new TimeSpan(tweede.Ticks - eerste.Ticks);
-            Console.WriteLine("{0} seconden\nEn {1} milliseconden", tijd.Seconds, tijd.Milliseconds - tijd.Seconds);
+            Console.WriteLine("{0} seconden\n{1} milliseconden", tijd.Seconds, tijd.Milliseconds - tijd.Seconds);
         }
     }
 }
