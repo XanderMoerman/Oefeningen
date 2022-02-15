@@ -93,6 +93,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoutOef3", "FoutOef3\FoutOe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningDateTime", "OefeningDateTime\OefeningDateTime.csproj", "{64F4E022-EEB7-482C-949C-68AF1B7603C4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OefeningClasses", "OefeningClasses", "{D321FF39-BFBA-4646-AEB5-12AB601CF6A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningClasses1", "OefeningClasses1\OefeningClasses1.csproj", "{0F091DAF-4C84-4603-B8FB-41F9B1D30905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppClasses", "ConsoleAppClasses\ConsoleAppClasses.csproj", "{9B624C83-7720-4CF7-9B41-FB269CD5FA8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -251,6 +257,14 @@ Global
 		{64F4E022-EEB7-482C-949C-68AF1B7603C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64F4E022-EEB7-482C-949C-68AF1B7603C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64F4E022-EEB7-482C-949C-68AF1B7603C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F091DAF-4C84-4603-B8FB-41F9B1D30905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F091DAF-4C84-4603-B8FB-41F9B1D30905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F091DAF-4C84-4603-B8FB-41F9B1D30905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F091DAF-4C84-4603-B8FB-41F9B1D30905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B624C83-7720-4CF7-9B41-FB269CD5FA8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B624C83-7720-4CF7-9B41-FB269CD5FA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B624C83-7720-4CF7-9B41-FB269CD5FA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B624C83-7720-4CF7-9B41-FB269CD5FA8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,6 +302,7 @@ Global
 		{877716E7-22E6-4DD4-99D7-AD4B7C8EFF82} = {FE862A17-3229-4A80-91B3-42147312B8A9}
 		{628BBDC3-4120-41CD-8021-F98F9B189D6A} = {FE862A17-3229-4A80-91B3-42147312B8A9}
 		{F9B09B92-19F9-4870-AFA8-D74664121A18} = {FE862A17-3229-4A80-91B3-42147312B8A9}
+		{0F091DAF-4C84-4603-B8FB-41F9B1D30905} = {D321FF39-BFBA-4646-AEB5-12AB601CF6A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDAE46BB-A4F0-4C77-BFF0-9F36E495B8DE}
