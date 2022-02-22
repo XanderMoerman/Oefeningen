@@ -9,11 +9,11 @@ namespace OefeningClasses
     class Persoon
     {
         public string naam { get; set; } // init naam
-        private string voornaam; // veld naam
-        public string Voornaam // init voornaam
+        private string Voornaam; // veld voornaam
+        public string voornaam // init voornaam
         {
-            get { return voornaam; }
-            set { voornaam = value; }
+            get { return Voornaam; }
+            set { Voornaam = value; }
         }
         public Persoon() //contructor zonder parameters
         {
@@ -23,11 +23,11 @@ namespace OefeningClasses
         public Persoon(string Naam, string Voornaam) // met parameters
         {
             this.naam = Naam;
-            this.Voornaam = Voornaam;
+            this.voornaam = Voornaam;
         }
         public string VolledigeNaam() // return
         {
-            return (naam + " " +  Voornaam);
+            return (naam + " " +  voornaam);
         }
     }
 }
