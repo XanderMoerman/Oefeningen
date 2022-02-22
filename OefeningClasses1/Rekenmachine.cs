@@ -10,19 +10,19 @@ namespace OefeningClasses1
     {
         public static int som(int get1, int get2)
         {
-            return (get1 + get2);
+            return (get2 + get1);
         }
         public static int min(int get1, int get2)
         {
-            return (get1 - get2);
+            return (get2 - get1);
         }
         public static int delen(int get1, int get2)
         {
-            return (get1 / get2);
+            return (get2 / get1);
         }
         public static int maal(int get1, int get2)
         {
-            return (get1 * get2);
+            return (get2 * get1);
         }
     }
 }
