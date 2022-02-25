@@ -21,9 +21,9 @@ namespace OefeningClassesAuto
             BouwJaar = DateTime.Parse(Console.ReadLine());
             Auto Auto2 = new Auto(Merk, Eigenaar, BouwJaar); //vol
 
-            Console.WriteLine("Auto1:\nMerk = {0}\nEigenaar = {1}\nBouwJaar = {2}", Auto1.Merk, Auto1.Eigenaar, Auto1.BouwJaar);
+            Console.WriteLine("Auto1:\nMerk = {0}\nEigenaar = {1}\nBouwJaar = {2}", Auto1.Merk, Auto1.Eigenaar, Auto1.BouwJaar.Year);
             Console.WriteLine();
-            Console.WriteLine("Auto2:\nMerk = {0}\nEigenaar = {1}\nBouwJaar = {2}", Auto2.Merk, Auto2.Eigenaar, Auto2.BouwJaar);
+            Console.WriteLine("Auto2:\nMerk = {0}\nEigenaar = {1}\nBouwJaar = {2}", Auto2.Merk, Auto2.Eigenaar, Auto2.BouwJaar.Year);
 
             //kan ook
             //Console.WriteLine(Auto1.Afdruk());
