@@ -101,6 +101,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppClasses", "Consol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesNaam", "OefeningClasses2\ClassesNaam.csproj", "{8D0A7DEF-2F43-4DAF-A040-06161BB9687A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningClassesAuto", "OefeningClassesAuto\OefeningClassesAuto.csproj", "{0AE2E428-04C2-4F64-ADA3-AF2667DE646B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -271,6 +273,10 @@ Global
 		{8D0A7DEF-2F43-4DAF-A040-06161BB9687A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0A7DEF-2F43-4DAF-A040-06161BB9687A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0A7DEF-2F43-4DAF-A040-06161BB9687A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE2E428-04C2-4F64-ADA3-AF2667DE646B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE2E428-04C2-4F64-ADA3-AF2667DE646B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE2E428-04C2-4F64-ADA3-AF2667DE646B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE2E428-04C2-4F64-ADA3-AF2667DE646B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -310,6 +316,7 @@ Global
 		{F9B09B92-19F9-4870-AFA8-D74664121A18} = {FE862A17-3229-4A80-91B3-42147312B8A9}
 		{0F091DAF-4C84-4603-B8FB-41F9B1D30905} = {D321FF39-BFBA-4646-AEB5-12AB601CF6A0}
 		{8D0A7DEF-2F43-4DAF-A040-06161BB9687A} = {D321FF39-BFBA-4646-AEB5-12AB601CF6A0}
+		{0AE2E428-04C2-4F64-ADA3-AF2667DE646B} = {D321FF39-BFBA-4646-AEB5-12AB601CF6A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDAE46BB-A4F0-4C77-BFF0-9F36E495B8DE}

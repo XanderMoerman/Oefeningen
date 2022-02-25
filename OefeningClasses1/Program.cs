@@ -12,6 +12,7 @@ namespace OefeningClasses1
         {
             int get1=0, get2=0;
             string teken = "+";
+            Console.WriteLine("Tekens:\nplus: +\nmin: -\ndelen: /\nmaal: *\nmacht: ²\nwortel: V\n");
             while(teken != "=")
             {   
                 string lees = Console.ReadLine();
@@ -38,7 +39,12 @@ namespace OefeningClasses1
                             //Console.WriteLine("Het product is: {0}", get2);
                             break;
                         case "^":
-                            get2 = specialeRekenMachine
+                            get2 = specialeRekenMachine.macht(get1, get2);
+                            //Console.WriteLine("De macht is: {0}", get2);
+                            break;
+                        case "V":
+                            get2 = specialeRekenMachine.wortel(get1, get2);
+                            break;
                     }
                 }
                 
@@ -46,19 +52,27 @@ namespace OefeningClasses1
                 {
                     case "+":
                         teken = "+";
-                        Console.WriteLine("teken");
+                        //Console.WriteLine("teken");
                         break;
                     case "-":
                         teken = "-";
-                        Console.WriteLine("teken");
+                        //Console.WriteLine("teken");
                         break;
                     case "/":
                         teken = "/";
-                        Console.WriteLine("teken");
+                        //Console.WriteLine("teken");
                         break;
                     case "*":
                         teken = "*";
-                        Console.WriteLine("teken");
+                        //Console.WriteLine("teken");
+                        break;
+                    case "^":
+                        teken = "^";
+                        //Console.WriteLine("teken");
+                        break;
+                    case "V":
+                        teken = "V";
+                        //Console.WriteLine("teken");
                         break;
                     case "=":
                         teken = "=";
