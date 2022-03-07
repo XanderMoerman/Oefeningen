@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassesRekenmachineLib;
 
 namespace OefeningClasses1
 {
@@ -23,27 +24,33 @@ namespace OefeningClasses1
                     {
 
                         case "+":
-                            get2 = Rekenmachine.som(get1, get2);
+                            get2 =  Class1.som(get1, get2);
+                            //get2 = Rekenmachine.som(get1, get2);
                             //Console.WriteLine("De som is: {0}", get2);
                             break;
                         case "-":
-                            get2 = Rekenmachine.min(get1, get2);
+                            get2 = Class1.min(get1, get2);
+                            //get2 = Rekenmachine.min(get1, get2);
                             //Console.WriteLine("Het verschil is: {0}", get2);
                             break;
                         case "/":
-                            get2 = Rekenmachine.delen(get1, get2);
+                            get2 = Class1.delen(get1, get2);
+                            //get2 = Rekenmachine.delen(get1, get2);
                             //Console.WriteLine("Het quotient is: {0}", get2);
                             break;
                         case "*":
-                            get2 = Rekenmachine.maal(get1, get2);
+                            get2 = Class1.maal(get1, get2);
+                            //get2 = Rekenmachine.maal(get1, get2);
                             //Console.WriteLine("Het product is: {0}", get2);
                             break;
                         case "^":
-                            get2 = specialeRekenMachine.macht(get1, get2);
+                            get2 = Class1.macht(get1, get2);
+                            //get2 = specialeRekenMachine.macht(get1, get2);
                             //Console.WriteLine("De macht is: {0}", get2);
                             break;
                         case "V":
-                            get2 = specialeRekenMachine.wortel(get1, get2);
+                            get2 = Class1.wortel(get1, get2);
+                            //get2 = specialeRekenMachine.wortel(get1, get2);
                             break;
                     }
                 }
