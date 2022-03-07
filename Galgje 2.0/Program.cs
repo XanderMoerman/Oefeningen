@@ -13,7 +13,7 @@ namespace Galgje_2._0
             Console.WriteLine("Geef een woord in.");
             string word = Console.ReadLine();
             string StartWord = word;
-            string letter;
+            char letter;
             string lines = "";
             word = word.ToLower();
             Console.Clear();
@@ -27,20 +27,24 @@ namespace Galgje_2._0
                 Console.Clear();
                 Console.WriteLine(lines);
                 Console.WriteLine("Geef een letter in.");
-                letter = Console.ReadLine();
+                letter = char.Parse(Console.ReadLine());
                 if (word.Contains(letter)) //als de ingelezen letter in het woord zit
                 {
                     Console.WriteLine("Letter zit in het woord.");
+                    
                     while (word.Contains(letter))
                     {
-                        int index = word.IndexOf(letter);
-                        lines = lines.Insert(index, letter);
-                        lines = lines.Remove(index+1,1);
-                        word = word.Remove(index, 1); //de letter word uit het woord verwijdert
-                        i--; //teller gaat omlaag met 1
-                        System.Threading.Thread.Sleep(500); // wacht 500ms
+                        for (int k = 0; k < word.Length; k++) //here
+                        {
+                            if (word[k] == letter)
+                            {
+                                lines = lines.Replace(lines[k], letter);
+                                break;
+                            }
+                        }
+                        word = word.Remove(word.IndexOf(letter), 1);   
                     }
-                    
+                    System.Threading.Thread.Sleep(1000);
                 }
                 else if (!word.Contains(letter)) // anders als de ingelezen letter niet in het woord zit
                 {
