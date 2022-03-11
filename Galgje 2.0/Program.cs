@@ -31,19 +31,18 @@ namespace Galgje_2._0
                 if (word.Contains(letter)) //als de ingelezen letter in het woord zit
                 {
                     Console.WriteLine("Letter zit in het woord.");
-                    
-                    while (word.Contains(letter))
-                    {
+
                         for (int k = 0; k < word.Length; k++) //here
                         {
                             if (word[k] == letter)
                             {
-                                lines = lines.Replace(lines[k], letter);
-                                break;
+                                
+                                lines = lines.Insert(k, Convert.ToString(letter));
+                                lines = lines.Remove(k+1, 1);
+                                word = word.Remove(k, 1);
                             }
                         }
-                        word = word.Remove(word.IndexOf(letter), 1);   
-                    }
+                        
                     System.Threading.Thread.Sleep(1000);
                 }
                 else if (!word.Contains(letter)) // anders als de ingelezen letter niet in het woord zit
@@ -51,11 +50,12 @@ namespace Galgje_2._0
                     Console.WriteLine("Letter zit niet in het woord.");
                     System.Threading.Thread.Sleep(500);
                 }
-                
+                else Console.WriteLine("Error"); System.Threading.Thread.Sleep(500);
+
             }
             Console.Clear();
             Console.WriteLine("Het woord was: {0}", StartWord);
-            if (word == "") Console.WriteLine("Woord geraden");
+            if (word == "") Console.WriteLine("goed geraden");
             else Console.WriteLine("Probeer nog een keer.");
             System.Threading.Thread.Sleep(500);
         }
