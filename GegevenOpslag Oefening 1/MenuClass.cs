@@ -23,7 +23,7 @@ namespace GegevenOpslag_Oefening_1
 
         public static string ToonBestand(string bestandsNaam)
         {
-
+            return "";
         }
     }
 }
