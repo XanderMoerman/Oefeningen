@@ -20,10 +20,17 @@ namespace GegevenOpslag_Oefening_1
                     Console.Clear();
                     Console.WriteLine("Geef de bestandsnaam op.");
                     string bestandsNaam = Console.ReadLine();
-                    bestandsNaam = @"C:\" + bestandsNaam;
+                    bestandsNaam = @"C:\Files\" + bestandsNaam;
                     Console.WriteLine("Geef een tekst in en duw op ENTER.");
                     string tekst = Console.ReadLine();
-                    if (File.Exists(bestandsNaam) == true) Console.WriteLine("Bestand bestaat al."); // here
+                    if (File.Exists(bestandsNaam) == true) Console.WriteLine("Bestand bestaat al.");
+                    else
+                    {
+                        StreamWriter bestand = new StreamWriter(bestandsNaam);
+                        bestand.WriteLine(tekst);
+                        Console.WriteLine("Bestand opgeslaan in " + bestandsNaam);
+                        //here
+                    }
                 }
             }
         }
