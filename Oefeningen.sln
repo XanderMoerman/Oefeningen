@@ -123,6 +123,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningCollections1", "Oef
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningCollections2", "OefeningCollections2\OefeningCollections2.csproj", "{F6A7EB09-7EE7-49E4-B99A-479093E8CFE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefeningCollections3", "OefeningCollections3\OefeningCollections3.csproj", "{49C7AB50-A3AD-4716-877B-099719D004EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -325,6 +327,10 @@ Global
 		{F6A7EB09-7EE7-49E4-B99A-479093E8CFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6A7EB09-7EE7-49E4-B99A-479093E8CFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6A7EB09-7EE7-49E4-B99A-479093E8CFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C7AB50-A3AD-4716-877B-099719D004EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C7AB50-A3AD-4716-877B-099719D004EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C7AB50-A3AD-4716-877B-099719D004EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C7AB50-A3AD-4716-877B-099719D004EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -374,6 +380,7 @@ Global
 		{741A03D4-FFDC-4D24-BC65-96C3DBA5276A} = {006C5864-4B78-41BF-9C32-91F8B88FDEB2}
 		{2623C7D7-DBB2-45DD-AC60-142307F91F41} = {006C5864-4B78-41BF-9C32-91F8B88FDEB2}
 		{F6A7EB09-7EE7-49E4-B99A-479093E8CFE9} = {006C5864-4B78-41BF-9C32-91F8B88FDEB2}
+		{49C7AB50-A3AD-4716-877B-099719D004EA} = {006C5864-4B78-41BF-9C32-91F8B88FDEB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDAE46BB-A4F0-4C77-BFF0-9F36E495B8DE}
